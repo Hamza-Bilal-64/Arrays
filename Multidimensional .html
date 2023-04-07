@@ -7,21 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        var ary = [
-            ["HAMZA",18,"MALE","BSCS"],
-            ["RASHID",18,"MALE","SE"],
-            ["AMINA",19,"FEMALE","BSC"],
-            ["HARIS",18,"MALE","BS"]
+  <script>
+    var ary = [
+        ["S.Rashid",40,"Male","MPHIL"],
+        ["S.HAMMAD",18,"Male","ICS"],
+        ["S.AHMAD",18,"Male","BSCS"],
+        ["S.UMAR",30,"Male","PHD"]
+    
+    ];
+    // document.write(ary[3][0])
+    document.write("<table border = '1px' cellspacing = '0'>")
+      document.write("<tr>")
+    for (var a = 0; a < 4 ; a++){
+     for ( var b = 0; b < 4 ; b++){
+        document.write( "<td>" + ary[a][b] +  "</td>" );
+     }
+    //  document.write( "<br>");
+    document.write("</tr>")
 
-        ];
-        for (var a = 0 ; a < 4 ; a++){
-            for ( var b = 0 ; b < 4 ; b++){
-
-            document.write(ary[a][b]  )
-        }
-        document.write("<br>")
     }
-    </script>
+       document.write("</table>")
+  </script>
 </body>
 </html>
